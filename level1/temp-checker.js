@@ -12,19 +12,22 @@ Example output:
 77 degrees is warm
 */
 
-
-
 //the temps
 const temperatures = [38, 65, 25, 71, 57];
 
 //your code here
 
 //iterate through the array
+for (let i = 0; i< temperatures.length; i++) {
 
   //store each temperature in variable
-
+  const tempChecker = temperatures[i]
   //use a conditional to check if temperature is above 60
+  if (tempChecker > 60) {
 
-    //if it is, print out message indicating it is warm
-
-    //if not, print out message indicating is is cold
+    console.log(`${tempChecker} degrees is warm`);
+  } else {
+    console.log(`${tempChecker} degrees is cold`)
+  }
+    
+}

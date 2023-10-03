@@ -10,9 +10,10 @@ const names = ["Alice", "Charlie", "Diego", "Eve", "Fiona", "Hassan", "Isabel", 
 //iterate through the names array
 for (let i = 0; i < names.length; i++) {
   //store the current name in a variable
-  //your code here
 
-  //log out a greeting using string interpolation
-  //your code here
-  
+  const currentName = names[i];
+
+  //log out a greeting using string interpolation 
+console.log(`Hello, ${currentName}!`);
 }
+  

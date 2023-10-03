@@ -11,7 +11,14 @@ Buy: Juice
 Buy: Flour
 */
 
+
 //items:
 const items = ["Apples", "Bread", "Milk", "Eggs", "Cheese"];
 
 //add your code below this line, include comments describing each line
+for (let i = 0; i< items.length; i++) {
+
+    const currentItems = items[i]
+
+    console.log(`Buy, ${currentItems}!`)
+}
