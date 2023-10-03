@@ -18,3 +18,20 @@ const text = "Hello, how are you today? Enjoy your stay!";
 const vowels = "aeiou";
 
 //add your code below
+
+// Convert the text to lowercase to make the comparison case-insensitive
+const lowercaseText = text.toLowerCase();
+
+// Initialize a counter for vowels
+let vowelCount = 0;
+
+// Iterate through each character in the text
+for (let char of lowercaseText) {
+  // Check if the character is a vowel
+  if (vowels.includes(char)) {
+    vowelCount++;
+  }
+}
+
+// Print the number of vowels
+console.log(`Number of vowels: ${vowelCount}`);

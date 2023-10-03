@@ -17,3 +17,9 @@ Note: This is totally separate/different from the to do list project.
 const tasks = ["Buy groceries", "Finish homework", "Go for a run", "Call a friend"];
 
 //add your code below
+
+// Iterate through the tasks array
+for (let i = 0; i < tasks.length; i++) {
+    // Print each task with its corresponding number
+    console.log(`${i + 1}. ${tasks[i]}`);
+  }

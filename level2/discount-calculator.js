@@ -17,3 +17,21 @@ Original price: $10, Discount price: $9.50
 const itemPrices = [25, 60, 30, 75, 15];
 
 //add your code below this line, include comments describing your code
+function calculateDiscountedPrice(price) {
+    if (price >= 50) {
+      // Apply a 10% discount to items priced at or above $50
+      return price - (price * 0.1);
+    } else {
+      // Apply a 5% discount to all other items
+      return price - (price * 0.05);
+    }
+  }
+  
+  // Iterate through the item prices array
+  for (let i = 0; i < itemPrices.length; i++) {
+    const originalPrice = itemPrices[i];
+    const discountedPrice = calculateDiscountedPrice(originalPrice);
+  
+    // Print out the original and discounted prices
+    console.log(`Original price: $${originalPrice.toFixed(2)}, Discount price: $${discountedPrice.toFixed(2)}`);
+  }
