@@ -22,4 +22,4 @@ const tasks = ["Buy groceries", "Finish homework", "Go for a run", "Call a frien
 for (let i = 0; i < tasks.length; i++) {
     // Print each task with its corresponding number
     console.log(`${i + 1}. ${tasks[i]}`);
-  }
+}
